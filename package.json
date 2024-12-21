@@ -5,6 +5,9 @@
   "repository": "git@github.com:jeepies/be-portfolio.git",
   "author": "jay <jay@jeepies.codes>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/server.ts"
+  },
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2"
