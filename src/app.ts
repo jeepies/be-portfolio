@@ -1,9 +1,5 @@
-import express, { Express, Request, Response } from 'express';
+import express, { type Express } from 'express';
 
 const app: Express = express();
 
-app.get('/', (_request: Request, response: Response) => {
-    response.send("hi :3");
-})
-
-export default app;
+export default app; 
