@@ -1,9 +1,11 @@
-import express, { Express, Request, Response } from 'express';
+import express from 'express';
+import routes from './routes';
 
-const app: Express = express();
+const app = express();
 
-app.get('/', (_request: Request, response: Response) => {
-    response.send("hi :3");
-})
+Object.entries(routes).forEach(([route, handlers]) => {
+    if (route === 'root') route = '';
+    app.use(`/${route}`, handlers);
+});
 
-export default app;
+export default app; 
