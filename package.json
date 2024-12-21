@@ -1,0 +1,12 @@
+{
+  "name": "be-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jeepies/be-portfolio.git",
+  "author": "jay <jay@jeepies.codes>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
